@@ -1,0 +1,25 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+int counter = 1, number = 0, largest = 0;
+
+    cout << "Please enter up to 5 numbers and I will print the largest one on the screen.\n\n";
+
+    while (counter <= 5)
+    {
+        cin >> number;
+        counter++;
+        if (largest < number)
+        {
+            largest = number;
+        }
+
+    }
+
+    cout << "\n The largest number is: " <<largest << endl;
+    
+    return 0;
+}
